@@ -1,0 +1,133 @@
+{
+  "_meta": {
+    "hostvars": {
+      "54.148.71.55": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "SRBVa1426547698490", 
+        "ec2_dns_name": "ec2-54-148-71-55.us-west-2.compute.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-58915955", 
+        "ec2_image_id": "ami-29ebb519", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "t2.micro", 
+        "ec2_ip_address": "54.148.71.55", 
+        "ec2_item": "", 
+        "ec2_kernel": "", 
+        "ec2_key_name": "robertskey", 
+        "ec2_launch_time": "2015-03-16T23:14:58.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_placement": "us-west-2a", 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-172-31-40-151.us-west-2.compute.internal", 
+        "ec2_private_ip_address": "172.31.40.151", 
+        "ec2_public_dns_name": "ec2-54-148-71-55.us-west-2.compute.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-west-2", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-deac88bb", 
+        "ec2_security_group_names": "ssh-access", 
+        "ec2_sourceDestCheck": "true", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "subnet-8f72f1ea", 
+        "ec2_tag_Name": "imager", 
+        "ec2_virtualization_type": "hvm", 
+        "ec2_vpc_id": "vpc-2545ed40"
+      }, 
+      "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com": {
+        "ec2_DBInstance": "", 
+        "ec2_DBName": "im_db", 
+        "ec2_OptionGroupMembership": "", 
+        "ec2_OptionGroupMemberships": "", 
+        "ec2_OptionGroupName": "default:postgres-9-3", 
+        "ec2_PubliclyAccessible": "true", 
+        "ec2_Status": "in-sync", 
+        "ec2__address": "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com", 
+        "ec2__in_endpoint": false, 
+        "ec2__port": 5432, 
+        "ec2_allocated_storage": 5, 
+        "ec2_auto_minor_version_upgrade": true, 
+        "ec2_availability_zone": "us-west-2a", 
+        "ec2_backup_retention_period": 7, 
+        "ec2_character_set_name": "", 
+        "ec2_create_time": "2015-03-16T23:34:43.641Z", 
+        "ec2_engine": "postgres", 
+        "ec2_engine_version": "9.3.5", 
+        "ec2_id": "imager-bd", 
+        "ec2_instance_class": "db.t2.micro", 
+        "ec2_iops": "", 
+        "ec2_latest_restorable_time": "2015-03-22T19:39:48Z", 
+        "ec2_license_model": "postgresql-license", 
+        "ec2_master_username": "robert", 
+        "ec2_multi_az": false, 
+        "ec2_preferred_backup_window": "09:38-10:08", 
+        "ec2_preferred_maintenance_window": "mon:13:23-mon:13:53", 
+        "ec2_status": "available", 
+        "ec2_status_infos": ""
+      }
+    }
+  }, 
+  "ami-29ebb519": [
+    "54.148.71.55"
+  ], 
+  "ec2": [
+    "54.148.71.55"
+  ], 
+  "i-58915955": [
+    "54.148.71.55"
+  ], 
+  "imager-bd": [
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "key_robertskey": [
+    "54.148.71.55"
+  ], 
+  "rds": [
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "rds_parameter_group_default_postgres9_3": [
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "rds_postgres": [
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "security_group_ssh-access": [
+    "54.148.71.55"
+  ], 
+  "tag_Name_imager": [
+    "54.148.71.55"
+  ], 
+  "type_db_t2_micro": [
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "type_t2_micro": [
+    "54.148.71.55"
+  ], 
+  "us-west-2": [
+    "54.148.71.55", 
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "us-west-2a": [
+    "54.148.71.55", 
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ], 
+  "vpc_id_vpc-2545ed40": [
+    "54.148.71.55", 
+    "imager-bd.cay1dphbxik1.us-west-2.rds.amazonaws.com"
+  ]
+}

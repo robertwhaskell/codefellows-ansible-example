@@ -1,0 +1,12 @@
+description "imager"
+
+start on (filesystem)
+stop on runlevel [016]
+
+respawn
+setuid ubuntu
+setgid ubuntu
+chdir {{ django_home }}/imager
+env DJANGO_SETTINGS_MODULE=imager.production
+env DATABASE_URL={{ db_url }}
+exec gunicorn -b 127.0.0.1:8000 -w 4 imager.wsgi --error-logfile /tmp/gunicorn-error.log

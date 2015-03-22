@@ -1,7 +1,7 @@
 ---
 
 - name: Deploy Django Application to Web Servers
-  hosts: tag_Name_ansible-built
+  hosts: tag_Name_imager
   remote_user: ubuntu
   gather_facts: yes
   
@@ -21,5 +21,6 @@
               proxy_set_header X-Real-IP $remote_addr;
               proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             }
-          - location /static/ { root {{ django_home }}; }
+          - location /static/ { root {{ django_home }}/imager; }
+          - location /media/ { root {{ django_home }}/imager; }
 
